@@ -26,7 +26,14 @@
   <!-- Plugins JS start-->
   <script src="https://cdn.ckeditor.com/4.17.1/full-all/ckeditor.js"></script>
 
-
-<script src="runtime.59b3f71314066ff9.js" type="module"></script><script src="polyfills.0e6f89ab3deea92a.js" type="module"></script><script src="scripts.6e82b935f0095994.js" defer></script><script src="main.89118b182c0a7e5a.js" type="module"></script>
+  <script>
+      function isInputNumber(event) {
+    var char = String.fromCharCode(event.which);
+    if(!(/[0-9]/.test(char))){
+        event.preventDefault();
+    }
+  }
+  </script>
+<script src="runtime.59b3f71314066ff9.js" type="module"></script><script src="polyfills.0e6f89ab3deea92a.js" type="module"></script><script src="scripts.6e82b935f0095994.js" defer></script><script src="main.0216ed753c68d570.js" type="module"></script>
 
 </body></html>
